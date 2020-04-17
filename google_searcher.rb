@@ -2,7 +2,7 @@ require 'launchy'
 
 def get_argv
   search = ARGV
-  abort("Error: enter your search after the 'ruby files.rb HERE' command") if ARGV.empty?
+  abort("Error: enter your search after the 'search' command") if ARGV.empty?
   return search
 end
 
