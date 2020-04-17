@@ -14,7 +14,7 @@
 
 ## :top:  Progression ?
 
-→ Ce projet est en cours, je le complète à chaque nouvelle tâche automatisée. 
+→ Ce projet est en cours, je le complète à chaque nouvelle tâche automatisée que je mets ensuite en alias raccourcis pour mon terminal. 
 
 ## :computer:  Que contient ce projet ?
 
