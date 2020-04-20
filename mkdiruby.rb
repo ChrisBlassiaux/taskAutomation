@@ -41,6 +41,17 @@ def create_lib(name_folder)
   Dir.mkdir("#{name_folder}/lib")
 end
 
+def create_app_rb(name_folder)
+  file = File.open("#{name_folder}/app.rb", "a")
+  file.puts("require 'bundler'")
+  file.puts("Bundler.require")
+  file.puts("#HERE LINKS")
+  file.puts("require_relative 'lib/...'")
+  file.puts("require_relative 'lib/...'")
+  file.puts("binding.pry")
+  file.close
+end
+
 def initiate_rspec(name_folder)
   system("rspec --init")
   system("mv spec #{name_folder}")
@@ -61,6 +72,7 @@ def perform
   create_env(get_argv)
   create_gitignore_with_env(get_argv)
   create_lib(get_argv)
+  create_app_rb(get_argv)
   initiate_rspec(get_argv)
   create_readme(get_argv)
 end
